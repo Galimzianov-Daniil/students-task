@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box; /* Задаем всем элементам независимость от внутренних отступов */
+}
+
+.container {
+    /* max-width: 1170px;
+    margin: 0 auto;
+    padding: 0px 15px; */
+}
+
+
+.hero {
+    /*
+        Задаем внутренний отступ сверху и снизу.
+    */
+    padding: 40px 0px;
+}
+
+
+body {
+    /*
+        Подключаем шрифт Ubuntu. 
+        Если шрифт Ubuntu не подключится, то применится любой шрифт без засечек.
+    */
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+button {
+    background-color: transparent; /* Задаем прозрачный фон */
+    border: none; /* Убираем границы */
+    outline: none; /* Убираем обводку */
+    padding: 0; /* Убираем отступы */
+}
+
+.hero-title {
+    font-weight: bold; /* Жирный шрифт */
+    font-size: 36px; /* Размер шрифта в 36px */
+}
+
+
+.hero-price {
+    font-weight: bold; /* Жирный шрифт */
+    font-size: 24px; /* Размер шрифта в 24px */
+}
+
+
+.hero-descr {
+    font-size: 14px; /* Размер шрифта в 14px */
+    line-height: 20px; /* Высота строки в 20px */
+
+    max-width: 465px; /* Задаем максимальную ширину */
+}
+
+
+.button {
+    border-radius: 100px; /* Закругляем края */
+    width: 100%; /* Задаем ширину в 100% */
+    max-width: 209px; /* Задаем максимальную ширину */
+    text-align: center; /* Выравниваем текст по центру */
+    padding: 13px 0px; /* Отступ сверху */
+    font-size: 18px; /* Меняем размер шрифта */
+    cursor: pointer; /* Курсор "пальчиком" */
+}
+
+
+.button_primary {
+    background-color: #0071E3;
+    color: #ffffff;
+}
+
+
+.button_o {
+    border: 1px solid #000000;
+}
+
+
+.hero-buttons__button {
+    margin-right: 30px;
+}
+
+
+.hero-buttons__button:last-child {
+    margin-right: 0;
+}
+
+
+.hero-text__title {
+    margin-bottom: 26px;
+}
+
+
+.hero-text__price {
+    margin-bottom: 58px;
+}
+
+
+.hero-text__descr {
+    margin-bottom: 45px;
+}
+
+.hero-text {
+    display: inline-block;
+    vertical-align: middle; 
+    
+    /* vertical-align: top; - по верху */
+    /* vertical-align: bottom; - по низу */
+}
+
+.hero-img {
+    display: inline-block;
+    vertical-align: middle;
+
+    /* vertical-align: top; - по верху */
+    /* vertical-align: bottom; - по низу */
+}
+
+.hero__img {
+    margin-right: 30px;
+}
+
+
+.features {
+    padding: 77px 0;
+    background: #131313;
+}
+
+
+.feature-card {
+    color: #ffffff;
+    text-align: center;
+
+    display: inline-block; /* Делаем строчно блочным */
+    width: 25%; /* Задаем ширину в  25% */
+    float: left; /* Создаем обтекание слева */
+}
+
+.feature-card__img {
+    margin-bottom: 28px;
+}
+
+.feature-card__title {
+    margin-bottom: 13px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.feature-card__descr {
+    line-height: 22px;
+    font-size: 14px;
+
+    max-width: 245px; /* Делаем перенос */
+    margin: auto; /* Равномерно рапсределяем отступы */
+}
+
+.features::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.hero-img img {
+    max-width: 100%;
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.section__title {
+    margin-bottom: 60px;
+}
+
+.flex-container {
+    display: flex;
+    margin-right: -30px;
+    flex-wrap: wrap;
+    
+}
+
+.card {
+    padding-top: 28px;
+    padding-bottom: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.flex-container__accessory {
+    flex-basis: calc(33% - 30px); /* Вычитаем отступ */
+    margin-right: 30px; /* Добавляем отступ */
+}
+
+.card__title {
+    font-size: 24px;
+    margin-bottom: 17px;
+}
+
+.more-link {
+    font-size: 14px;
+    color: #0071E3;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+
+.arrow {
+    width: 100%;
+    text-align: center;
+}
+
+.section_bg_gray {
+    background: #F2F2F2;
+}
+
+.feedback-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+
+
+    /* Удаляем длину, задаем отступ */
+
+    padding-right: 10px;
+    /* max-width: 460px; */
+}
+
+.feedback-card__title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.feedback-card__p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.feedback-card__text {
+    margin-left: 30px;
+}
+
+.feedback-card__item-wrap {
+    padding-right: 30px;
+}
